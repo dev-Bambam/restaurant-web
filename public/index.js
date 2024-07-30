@@ -1,3 +1,6 @@
+// import Splide from '@splidejs/splide';
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.theme-controller');
     const htmlElement = document.documentElement;
@@ -25,3 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 })
+
+
