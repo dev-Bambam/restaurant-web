@@ -4,11 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./output.css" />
-  <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <!-- <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css"> -->
   <title>Document</title>
+
+
+  <!-- <style>
+    .hero {
+      position: relative;
+    }
+
+    .hero .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style> -->
 </head>
 <body>
-  <header class="navbar bg-base-100 fixed w-full">
+  <header class="navbar bg-base-100 fixed w-full z-50">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -23,7 +48,7 @@
           <li><a href="#about">Reservation</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">FoodIE</a>
+      <a class="btn btn-ghost text-xl">afrospice</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -52,53 +77,7 @@
       <a class="btn">Sign Up</a>
     </div>
   </header>
-  <!-- hero page -->
-  <!-- Splide Carousel -->
-  <div id="splide" class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="hero min-h-screen bg-cover bg-center" style="background-image: url('./images/background/jollof.jpeg');">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-neutral-content text-center">
-              <div class="max-w-md space-y-9">
-                <p class="border w-40 m-auto text-sm text-gray-400 border-gray-400">FOODIE RESTAURANT</p>
-                <h1 class="mb-5 text-5xl font-bold">Welcome to the Foodie's Delight</h1>
-                <p class="mb-5">Indulge in an unforgettable culinary experience with our exquisite dishes crafted to perfection. Discover the true essence of flavor and hospitality at Gourmet Delight.</p>
-                <button class="btn btn-primary">Explore Menu</button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!-- Add more slides as needed -->
-        <li class="splide__slide">
-          <div class="hero min-h-screen bg-cover bg-center" style="background-image: url('./images/background/bg2.jpg');">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-neutral-content text-center">
-              <div class="max-w-md space-y-9">
-                <p class="border w-40 m-auto text-sm text-gray-400 border-gray-400">FOODIE RESTAURANT</p>
-                <h1 class="mb-5 text-5xl font-bold">Experience the Best of Cuisine</h1>
-                <p class="mb-5">Join us for a culinary journey like no other. Enjoy our diverse menu filled with flavors that will delight your taste buds.</p>
-                <button class="btn btn-primary">Explore Menu</button>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Splide('#splide', {
-        type   : 'loop',
-        autoplay: true,
-        perPage: 1,
-        cover: true,
-      }).mount();
-    });
-  </script>
-  <script src="./index.js"></script>
+  <!-- hero page using swiper -->
 </body>
+<script src="./index.js"></script>
 </html>

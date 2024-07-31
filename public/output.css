@@ -1993,8 +1993,24 @@ html {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .z-\[1\] {
   z-index: 1;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-auto {
@@ -2007,6 +2023,10 @@ html {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .hidden {
@@ -2115,6 +2135,11 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
