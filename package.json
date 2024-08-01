@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
+    "swiper": "^11.1.9",
     "tailwindcss": "^3.4.7"
   },
   "devDependencies": {
