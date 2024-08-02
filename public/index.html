@@ -8,7 +8,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>afrospice</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
   </head>
   <body>
     <header class="navbar bg-base-100 fixed w-full z-50">
@@ -90,16 +111,19 @@
           <div class="swiper-slide">
             <div
               class="hero min-h-screen"
-              style="background-image: url(./images/background/bg4.jpg)"
+              style="background-image: url(./images/background/bg5.jpg)"
             >
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-neutral-content text-center">
                 <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">Experience Authentic Flavors</h1>
-              <p class="mb-5">
-                Discover the rich and diverse tastes of our carefully crafted dishes, bringing you the essence of Afro cuisine.
-              </p>
-              <button class="btn btn-primary">Explore Menu</button>
+                  <h1 class="mb-5 text-5xl font-bold">
+                    Experience Authentic Flavors
+                  </h1>
+                  <p class="mb-5">
+                    Discover the rich and diverse tastes of our carefully
+                    crafted dishes, bringing you the essence of Afro cuisine.
+                  </p>
+                  <button class="btn btn-primary">Explore Menu</button>
                 </div>
               </div>
             </div>
@@ -115,7 +139,8 @@
                 <div class="max-w-md">
                   <h1 class="mb-5 text-5xl font-bold">Savor Every Moment</h1>
                   <p class="mb-5">
-                    Join us for an unforgettable dining experience where every bite is a celebration of flavor and tradition.
+                    Join us for an unforgettable dining experience where every
+                    bite is a celebration of flavor and tradition.
                   </p>
                   <button class="btn btn-primary">Make a Reservation</button>
                 </div>
@@ -129,23 +154,66 @@
     </section>
     <!-- chief section -->
     <section id="#chef">
-      <div class="card lg:card-side bg-base-100 shadow-xl flex flex-col-reverse">
+      <div class="card lg:card-side bg-base-100 shadow-xl flex-col-reverse">
         <!-- reservation form -->
-       <div></div>
-       <div>
-        <figure class="w-">
-          <img
-            src="./images/chef/chief-chef3.png"
-            alt="Album" class=""/>
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title text-primary">Chief Chef</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Listen</button>
-          </div>
+        <div class="bg-base-200 p-5">
+          <h1 class="text-3xl mb-4">Make A Reservation</h1>
+          <form action="" id="form">
+            <div class="space-y-3">
+              <input
+                type="text"
+                placeholder="Name"
+                class="input input-bordered w-full max-w-xs"
+                id="name"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="input input-bordered w-full max-w-xs"
+                id="l-name"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="input input-bordered w-full max-w-xs"
+                id="email"
+              />
+              <input
+                type="number"
+                placeholder="+234"
+                class="input input-bordered w-full max-w-xs"
+                id="tel"
+              />
+              <input
+              type="date"
+              class="input input-bordered w-full max-w-xs"
+              id="user-date"
+            />
+            <input
+              type="time"
+              class="input input-bordered w-full max-w-xs"
+              id="user-time"
+            />
+            </div>
+            <button class="btn btn-primary mt-3 w-full max-w-xs" id="reserve-btn">
+              Reserve
+            </button>
+          </form>
         </div>
-       </div>
+        <div class="flex items-center justify-center md:items-center flex-col md:flex-row">
+          <div class="card-body lg:w-5/12 lg:space-y-3">
+            <h2 class="card-title text-primary">Chief Chef</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, beatae molestiae ex unde incidunt deserunt corrupti delectus deleniti quis, rerum possimus 
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Love</button>
+            </div>
+          </div>
+          <figure class="w-7/12">
+            <img src="./images/chef/chief-chef3.png" alt="Album" class="" />
+          </figure>
+        </div>
       </div>
     </section>
   </body>

@@ -1,6 +1,4 @@
-// import Splide from '@splidejs/splide';
-
-
+// theme swithcer
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.theme-controller');
     const htmlElement = document.documentElement;
@@ -29,4 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-
+// place reservation
+const form = document.querySelector('#form')
+form.addEventListener('submit',()=>{
+    // alert('Reservation placed')
+})
