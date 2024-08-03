@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="garden">
+<html lang="en" data-theme="black">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,7 +61,7 @@
             <li><a href="#about">Reservation</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">afrospice</a>
+        <a class="btn btn-ghost text-xl">afro<span class="-ml-0">spice</span></a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -153,66 +153,187 @@
       </div>
     </section>
     <!-- chief section -->
-    <section id="#chef">
-      <div class="card lg:card-side bg-base-100 shadow-xl flex-col-reverse">
+    <section id="chef">
+      <div class="card lg:card-side bg-base-100 flex-col-reverse lg:flex-row">
         <!-- reservation form -->
-        <div class="bg-base-200 p-5">
-          <h1 class="text-3xl mb-4">Make A Reservation</h1>
+        <div class="bg-base-200 p-5 lg:w-4/12">
+          <h1 class="text-3xl mb-4">Take A Reservation</h1>
           <form action="" id="form">
             <div class="space-y-3">
               <input
                 type="text"
                 placeholder="Name"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full"
                 id="name"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full"
                 id="l-name"
               />
               <input
                 type="email"
-                placeholder="email"
-                class="input input-bordered w-full max-w-xs"
+                placeholder="Email"
+                class="input input-bordered w-full"
                 id="email"
               />
               <input
                 type="number"
                 placeholder="+234"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full"
                 id="tel"
               />
               <input
-              type="date"
-              class="input input-bordered w-full max-w-xs"
-              id="user-date"
-            />
-            <input
-              type="time"
-              class="input input-bordered w-full max-w-xs"
-              id="user-time"
-            />
+                type="date"
+                class="input input-bordered w-full"
+                id="user-date"
+              />
+              <input
+                type="time"
+                class="input input-bordered w-full"
+                id="user-time"
+              />
             </div>
-            <button class="btn btn-primary mt-3 w-full max-w-xs" id="reserve-btn">
-              Reserve
+            <button class="btn btn-primary mt-3 w-full" id="reserve-btn">
+              Book A Table
             </button>
           </form>
         </div>
-        <div class="flex items-center justify-center md:items-center flex-col md:flex-row">
-          <div class="card-body lg:w-5/12 lg:space-y-3">
-            <h2 class="card-title text-primary">Chief Chef</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, beatae molestiae ex unde incidunt deserunt corrupti delectus deleniti quis, rerum possimus 
-            </p>
+        <!-- chief chef section -->
+        <div
+          class="flex items-center justify-center lg:items-center flex-col lg:flex-row lg:w-full p-5 lg:p-0"
+        >
+          <div class="card-body lg:w-4/12 lg:space-y-3">
+            <h1 class="text-4xl font-bold">James Black</h1>
+            <h2 class="card-title text-primary text-2xl">Chief Chef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <div class="card-actions">
               <button class="btn btn-primary">Love</button>
             </div>
           </div>
-          <figure class="w-7/12">
-            <img src="./images/chef/chief-chef3.png" alt="Album" class="" />
+          <figure class="lg:w-8/12 w-full flex justify-center">
+            <img
+              src="./images/chef/chief-chef4.png"
+              alt="Chief Chef"
+              class="w-full h-auto object-cover rounded-lg"
+            />
           </figure>
+        </div>
+      </div>
+    </section>
+    <!-- services section -->
+    <section id="service" class="mt-4 px-5">
+      <!-- typography -->
+      <div class="text-center">
+        <p>Our Services</p>
+        <h1 class="text-primary text-4xl">Services</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime
+        </p>
+      </div>
+      <!-- food card -->
+      <div
+        class="mt-24 flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0"
+      >
+        <!-- first card -->
+        <div class="card bg-base-200 w-96 rounded-none relative">
+          <figure>
+            <img
+              src="images/Rice/jollof-chiken.jpg"
+              class="object-fill w-40 rounded-full absolute border-base-300"
+            />
+          </figure>
+          <div class="card-body mt-16">
+            <h2 class="card-title text-primary">Jollof and Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-secondary">$200</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-secondary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="card bg-base-200 w-96 rounded-none relative">
+          <figure>
+            <img
+              src="images/Rice/fried-jollof.jpg"
+              class="object-fill w-40 rounded-full absolute border-base-300"
+            />
+          </figure>
+          <div class="card-body mt-16">
+            <h2 class="card-title text-primary">Jollof and Fried Rice Combo</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-secondary">$200</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-secondary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="card bg-base-200 w-96 rounded-none relative">
+          <figure>
+            <img
+              src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+              class="object-fill w-40 rounded-full absolute border-base-300"
+            />
+          </figure>
+          <div class="card-body mt-16">
+            <h2 class="card-title text-primary">Pounded Yam and Efo riro</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-secondary">$200</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-secondary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial -->
+    <section id="testimonial" class="bg-base-200 mt-4">
+      <!-- typography -->
+      <div class="text-center">
+        <h1 class="font-bold text-4xl">testimonial</h1>
+        <p class="text-primary">What our customers are saying</p>
+      </div>
+      <!-- sliding testimonial cards -->
+      <div
+        class=""
+      >
+        <!-- swiper component -->
+        <div class="swiper mySwiper2 mt-24 flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0">
+          <div class="swiper-wrapper">
+            <!-- first slide -->
+            <div class="swiper-slide">
+              <div class="card bg-base-100 w-96 rounded-none relative">
+                <figure>
+                  <img
+                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+                    class="object-fill w-40 rounded-full absolute border-base-300"
+                  />
+                </figure>
+                <div class="card-body mt-16">
+                  <h2 class="card-title text-primary">James Brownie</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+            <!-- second slide -->
+            <div class="swiper-slide">
+              <div class="card bg-base-100 w-96 rounded-none relative">
+                <figure>
+                  <img
+                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+                    class="object-fill w-40 rounded-full absolute border-base-300"
+                  />
+                </figure>
+                <div class="card-body mt-16">
+                  <h2 class="card-title text-primary">James Brownie</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
