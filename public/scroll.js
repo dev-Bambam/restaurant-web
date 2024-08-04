@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollReveal().reveal('#contact .text-center p', {
         origin: 'right',
-        distance: '30px',
+        distance: '10px',
         duration: 1000,
         delay: 300,
         reset: true
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollReveal().reveal('#about .flex.items-center', {
         origin: 'left',
-        distance: '30px',
+        distance: '10px',
         duration: 1000,
         delay: 400,
         reset: true
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollReveal().reveal('#about img', {
         origin: 'right',
-        distance: '30px',
+        distance: '10px',
         duration: 1000,
         delay: 500,
         reset: true
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollReveal().reveal('#about h1', {
         origin: 'left',
-        distance: '30px',
+        distance: '10px',
         duration: 1000,
         delay: 200,
         reset: true
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollReveal().reveal('#about p', {
         origin: 'right',
-        distance: '30px',
+        distance: '10px',
         duration: 1000,
         delay: 300,
         reset: true
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     ScrollReveal().reveal('.footer-logo', {
         origin: 'left',
-        distance: '50px',
+        distance: '10px',
         duration: 1000,
         delay: 200,
         reset: true
@@ -173,8 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     ScrollReveal().reveal('.footer-social', {
-        origin: 'right',
-        distance: '50px',
+        origin: 'left',
+        distance: '10px',
         duration: 1000,
         delay: 200,
         reset: true
