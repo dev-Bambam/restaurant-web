@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>afrospice</title>
     <style>
@@ -29,6 +31,22 @@
       h6 {
         font-family: "Playfair Display", serif;
       }
+
+      .swiper {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* .card img {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+} */
+
     </style>
   </head>
   <body>
@@ -216,7 +234,7 @@
             <img
               src="./images/chef/chief-chef4.png"
               alt="Chief Chef"
-              class="w-full h-auto object-cover rounded-lg"
+              class="w-full h-auto object-cover rounded-full border border-base-200"
             />
           </figure>
         </div>
@@ -290,55 +308,229 @@
       </div>
     </section>
     <!-- testimonial -->
-    <section id="testimonial" class="bg-base-200 mt-4">
+    <section id="testimonial" class="bg-base-200 mt-4 px-5">
       <!-- typography -->
-      <div class="text-center">
-        <h1 class="font-bold text-4xl">testimonial</h1>
+      <div class="text-center mb-8">
+        <h1 class="font-bold text-4xl">Testimonial</h1>
         <p class="text-primary">What our customers are saying</p>
       </div>
-      <!-- sliding testimonial cards -->
-      <div
-        class=""
-      >
-        <!-- swiper component -->
-        <div class="swiper mySwiper2 mt-24 flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0">
-          <div class="swiper-wrapper">
-            <!-- first slide -->
-            <div class="swiper-slide">
-              <div class="card bg-base-100 w-96 rounded-none relative">
-                <figure>
-                  <img
-                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
-                    class="object-fill w-40 rounded-full absolute border-base-300"
-                  />
-                </figure>
-                <div class="card-body mt-16">
-                  <h2 class="card-title text-primary">James Brownie</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                </div>
+      <!-- swiper component -->
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <!-- first slide -->
+          <div class="swiper-slide swiper-slider">
+            <div class="card bg-base-100 w-full rounded-none flex items-start p-4">
+              <figure class="flex-shrink-0">
+                <img
+                  src="./images/customer/c1.jpg"
+                  class="object-cover w-24 h-24 rounded-full border border-base-200"
+                />
+              </figure>
+              <div class="card-body flex-grow">
+                <h2 class="card-title text-primary">James Brownie</h2>
+                <p>Incredible tasteful</p>
               </div>
             </div>
-            <!-- second slide -->
-            <div class="swiper-slide">
-              <div class="card bg-base-100 w-96 rounded-none relative">
-                <figure>
-                  <img
-                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
-                    class="object-fill w-40 rounded-full absolute border-base-300"
-                  />
-                </figure>
-                <div class="card-body mt-16">
-                  <h2 class="card-title text-primary">James Brownie</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                </div>
+          </div>
+          <!-- second slide -->
+          <div class="swiper-slide swiper-slider">
+            <div class="card bg-base-100 w-full rounded-none flex items-start p-4">
+              <figure class="flex-shrink-0">
+                <img
+                  src="./images/customer/c2.jpg"
+                  class="object-cover w-24 h-24 rounded-full border-base-300"
+                />
+              </figure>
+              <div class="card-body flex-grow">
+                <h2 class="card-title text-primary">Sarah Dough</h2>
+                <p>The food here is absolutely amazing!</p>
+              </div>
+            </div>
+          </div>
+          <!-- third slide -->
+          <div class="swiper-slide swiper-slider">
+            <div class="card bg-base-100 w-full rounded-none flex items-start p-4">
+              <figure class="flex-shrink-0">
+                <img
+                  src="./images/customer/c3.jpg"
+                  class="object-cover w-24 h-24 rounded-full border-base-300"
+                />
+              </figure>
+              <div class="card-body flex-grow">
+                <h2 class="card-title text-primary">Michael Scofield</h2>
+                <p>Excellent service and delicious meals!</p>
+              </div>
+            </div>
+          </div>
+          <!-- fourth slide -->
+          <div class="swiper-slide swiper-slider">
+            <div class="card bg-base-100 w-full rounded-none flex items-start p-4">
+              <figure class="flex-shrink-0">
+                <img
+                  src="./images/customer/c4.jpg"
+                  class="object-cover w-24 h-24 rounded-full border-base-300"
+                />
+              </figure>
+              <div class="card-body flex-grow">
+                <h2 class="card-title text-primary">Anna Belle</h2>
+                <p>A wonderful dining experience!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add Pagination -->
+        <div class="testimonial-pagination swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- about us -->
+    <section id="about" class="bg-base-100 py-10">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-10">
+          <h1 class="text-4xl font-bold mb-2">About Us</h1>
+          <p class="text-primary">Discover Our Story</p>
+        </div>
+        <div class="flex flex-wrap justify-center items-start">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-5">
+            <h2 class="text-2xl font-bold mb-3">Our History</h2>
+            <p>
+              Afrospice was founded with a passion for bringing authentic African flavors to the community. From our humble beginnings to becoming a beloved local spot, our journey has been filled with joy and culinary excellence.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-5">
+            <h2 class="text-2xl font-bold mb-3">Our Mission</h2>
+            <p>
+              Our mission is to offer a dining experience that combines traditional African recipes with contemporary flair. We are committed to using fresh, locally sourced ingredients to create dishes that delight and inspire.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-5">
+            <h2 class="text-2xl font-bold mb-3">Meet the Team</h2>
+            <div class="flex items-center mb-4">
+              <img src="./images/chef/chief-chef.jpg" alt="Chef" class="w-16 h-16 rounded-full mr-4">
+              <div>
+                <h3 class="text-xl font-bold">Chef John Doe</h3>
+                <p>Executive Chef</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-4">
+              <img src="./images/chef/chief-chef2.png" alt="Manager" class="w-16 h-16 rounded-full mr-4">
+              <div>
+                <h3 class="text-xl font-bold">Jane Smith</h3>
+                <p>General Manager</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- contact us section -->
+    <section id="contact" class="bg-base-200 py-5 mt-4">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-10">
+          <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+          <p class="text-primary">We'd Love to Hear From You</p>
+        </div>
+        <div class="flex flex-wrap justify-center items-start">
+          <!-- Contact Form -->
+          <div class="w-full md:w-1/2 lg:w-1/3 p-5">
+            <form action="#" method="POST">
+              <div class="form-control mb-0">
+                <label for="name" class="label">
+                  <span class="label-text">Name</span>
+                </label>
+                <input type="text" id="name" name="name" class="input input-bordered w-full" required>
+              </div>
+              <div class="form-control mb-0">
+                <label for="email" class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="email" id="email" name="email" class="input input-bordered w-full" required>
+              </div>
+              <div class="form-control mb-0">
+                <label for="subject" class="label">
+                  <span class="label-text">Subject</span>
+                </label>
+                <input type="text" id="subject" name="subject" class="input input-bordered w-full" required>
+              </div>
+              <div class="form-control mb-0">
+                <label for="message" class="label">
+                  <span class="label-text">Message</span>
+                </label>
+                <textarea id="message" name="message" rows="4" class="textarea textarea-bordered w-full" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary mt-4">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Information -->
+          <div class="w-full md:w-1/2 lg:w-1/3 p-5">
+            <h2 class="text-2xl font-bold mb-3">Get In Touch</h2>
+            <p class="mb-4"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+            <p class="mb-4"><i class="fas fa-envelope"></i> info@afrospice.com</p>
+            <p class="mb-4"><i class="fas fa-map-marker-alt"></i> 123 Afrospice St, Food City, FC 12345</p>
+            <h3 class="text-xl font-bold mt-5">Operating Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+          </div>
+          <!-- Google Map -->
+          <div class="w-full lg:w-1/3 p-5">
+            <div class="h-64 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509441!2d144.9556513154792!3d-37.81732797975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57755e16f96d746!2sVictoria%20Market!5e0!3m2!1sen!2sau!4v1612853264630!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-base-100 py-10 footer-section">
+      <div class="container mx-auto px-5">
+        <div class="flex flex-wrap justify-between items-center">
+          <!-- Logo and Description -->
+          <div class="w-full md:w-1/3 mb-6 md:mb-0 text-center md:text-left footer-logo">
+            <a href="#" class="text-primary font-bold text-2xl">Afrospice</a>
+            <p class="mt-2 text-gray-500">Experience the taste of African cuisine with Afrospice. Your go-to restaurant for delicious meals and great service.</p>
+          </div>
+          <!-- Quick Links -->
+          <div class="w-full md:w-1/3 mb-6 md:mb-0 text-center footer-links">
+            <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#home" class="text-gray-500 hover:text-primary">Home</a></li>
+              <li><a href="#about" class="text-gray-500 hover:text-primary">About Us</a></li>
+              <li><a href="#menu" class="text-gray-500 hover:text-primary">Menu</a></li>
+              <li><a href="#contact" class="text-gray-500 hover:text-primary">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Social Media Links -->
+          <div class="w-full md:w-1/3 text-center md:text-right footer-social">
+            <h3 class="font-bold text-lg mb-2">Follow Us</h3>
+            <div class="flex justify-center md:justify-end space-x-4">
+              <a href="#" class="text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#" class="text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" class="text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#" class="text-primary"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 text-center footer-copyright">
+          <p class="text-gray-500">&copy; 2024 Afrospice. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>      
   </body>
   <script src="./index.js"></script>
   <script src="./swipper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scroll.js"></script>
 </html>
