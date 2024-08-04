@@ -98,3 +98,119 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
+document.addEventListener('DOMContentLoaded', () => {
+    ScrollReveal().reveal('#contact .text-center', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#contact .form-control, #contact .card', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 300,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#about .text-center', {
+        origin: 'top',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#about .w-full', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 300,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#service .text-center', {
+        origin: 'top',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#service .card', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 300,
+        interval: 200, // This will create a staggered effect
+        reset: true
+    });
+
+    ScrollReveal().reveal('.footer-section', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+    
+    ScrollReveal().reveal('.footer-logo', {
+        origin: 'left',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+    
+    ScrollReveal().reveal('.footer-links', {
+        origin: 'top',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+    
+    ScrollReveal().reveal('.footer-social', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+    
+    ScrollReveal().reveal('.footer-copyright', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    ScrollReveal().reveal('#chef .bg-base-200', {
+        origin: 'left',
+        distance: '40px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#chef .card-body', {
+        origin: 'bottom',
+        distance: '40px',
+        duration: 1000,
+        delay: 300,
+        reset: true
+    });
+
+    ScrollReveal().reveal('#chef figure', {
+        origin: 'left',
+        distance: '40px',
+        duration: 1000,
+        delay: 400,
+        reset: true
+    });
+});
