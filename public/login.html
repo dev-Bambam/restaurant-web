@@ -20,10 +20,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <!-- flowbite -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <title>afrospice</title>
 
     <style>
@@ -113,23 +113,23 @@
         <a href="login.html" class="btn">Sign Up</a>
       </div>
     </header>
-    <div id="form-page" class="w-[50%] ">
+    <div id="form-page" class="w-full">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <div class="w-1/2 hidden lg:block">
           <figure class="">
             <img
-              class="w-full rounded-l-lg"
+              class="lg:w-full h-auto rounded-l-lg"
               src="./images/Rice/fried-jollof.jpg"
               alt="Album"
             />
           </figure>
         </div>
-        <div class="card-body w-1/2 bg-base-200">
+        <div class="card-body w-full lg:w-1/2 bg-base-200">
           <!-- form -->
           <form action="">
             <div class="space-y-9">
               <!-- first name -->
-              <label class="input input-bordered flex items-center gap-2">
+              <label class="input flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -140,7 +140,7 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
                   />
                 </svg>
-                <input type="text" class="grow" placeholder="First Name" />
+                <input type="text" placeholder="First Name" required/>
               </label>
               <!-- last name -->
               <label class="input input-bordered flex items-center gap-2">
