@@ -23,16 +23,16 @@
     <style>
       #form-page {
         height: 100vh;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 70%;
-        margin: auto;
       }
     </style>
   </head>
-  <body class="text-4xl">
-    <header class="navbar bg-base-100 fixed w-full z-50 ">
+  <body class="fle">
+    <header class="navbar bg-base-100 fixed top-0 w-full">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -106,18 +106,18 @@
         <a href="login.html" class="btn">Sign Up</a>
       </div>
     </header>
-    <div id="form-page" class="w-full">
+    <div id="form-page" class="">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <div class="w-1/2 hidden lg:block">
             <img
-              class="lg:w-full h-auto rounded-l-lg"
+              class="lg:w-full h-full rounded-l-lg object-fill"
               src="./images/Rice/fried-jollof.jpg"
               alt="Album"
             />
         </div>
         <div class="card-body w-full lg:w-1/2 bg-base-200">
           <!-- form -->
-          <form action="" id="form-page">
+          <form action="" id="form">
             <div class="space-y-9">
               <!-- first name -->
               <label class="input input-bordered flex items-center gap-2">
@@ -178,7 +178,7 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <input type="password" class="grow" value="password" required id="password"/>
+                <input type="password" class="grow" value="password" require id="password"/>
               </label>
               <!-- button -->
               <button class="btn btn-active btn-primary mt-16" type="submit">
@@ -191,7 +191,4 @@
     </div>
   </body>
   <script src="login.js"></script>
-  <script src="index.js"></script>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
 </html>
