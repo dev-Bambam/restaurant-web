@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="garden">
+<html lang="en" data-theme="garde">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <!-- test daisy ui cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+
 
     <!-- google font -->
     <link
@@ -19,11 +18,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <!-- flowbite -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    /> -->
     <title>afrospice</title>
 
     <style>
@@ -34,7 +28,6 @@
         align-items: center;
         width: 70%;
         margin: auto;
-        /* margin-top: ; */
       }
     </style>
   </head>
@@ -116,17 +109,15 @@
     <div id="form-page" class="w-full">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <div class="w-1/2 hidden lg:block">
-          <figure class="">
             <img
               class="lg:w-full h-auto rounded-l-lg"
               src="./images/Rice/fried-jollof.jpg"
               alt="Album"
             />
-          </figure>
         </div>
         <div class="card-body w-full lg:w-1/2 bg-base-200">
           <!-- form -->
-          <form action="">
+          <form action="" id="form-page">
             <div class="space-y-9">
               <!-- first name -->
               <label class="input input-bordered flex items-center gap-2">
@@ -140,7 +131,7 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
                   />
                 </svg>
-                <input type="text" placeholder="First Name" required/>
+                <input type="text" placeholder="First Name" required id="fName"/>
               </label>
               <!-- last name -->
               <label class="input input-bordered flex items-center gap-2">
@@ -154,7 +145,7 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
                   />
                 </svg>
-                <input type="text" class="grow" placeholder="Last name" required/>
+                <input type="text" class="grow" placeholder="Last name" required id="lName"/>
               </label>
               <!-- email -->
               <label class="input input-bordered flex items-center gap-2">
@@ -171,7 +162,7 @@
                     d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
                   />
                 </svg>
-                <input type="text" class="grow" placeholder="Email" required/>
+                <input type="text" class="grow" placeholder="Email" required id="email"/>
               </label>
               <!-- password -->
               <label class="input input-bordered flex items-center gap-2">
@@ -187,11 +178,11 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <input type="password" class="grow" value="password" required/>
+                <input type="password" class="grow" value="password" required id="password"/>
               </label>
               <!-- button -->
-              <button class="btn btn-active btn-primary mt-16">
-                <a href="homepage.html">Sign Up</a>
+              <button class="btn btn-active btn-primary mt-16" type="submit">
+                Sign Up
               </button>
             </div>
           </form>
@@ -199,9 +190,8 @@
       </div>
     </div>
   </body>
-  <script src="./swipper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="login.js"></script>
   <script src="index.js"></script>
-  <!-- flowbite -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 </html>

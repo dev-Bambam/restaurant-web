@@ -30,5 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // place reservation
 const form = document.querySelector('#form')
 form.addEventListener('submit',()=>{
-    // alert('Reservation placed')
+    alert('Reservation placed')
 })

@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.colorCustomizations": {
+
+    },
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.editor.decorations.colors": true,
+    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "workbench.preferredHighContrastColorTheme": "Monokai Dimmed",
 }
