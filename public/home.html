@@ -53,7 +53,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="navbar bg-base-100 flex justify-between items-center shadow-md">
+    <header class="navbar bg-base-100 flex justify-between items-center shadow-sm fixed z-50">
       <!-- Logo -->
       <a class="btn btn-ghost text-xl text-primary">afrospice</a>
   
@@ -119,26 +119,76 @@
     <!-- main -->
     <main>
       <!-- hero-section -->
-      <section class="banner bg-base-100 pt-9 px-20">
-        <div class="container mx-auto flex flex-col lg:flex-row items-center">
-          <!-- Left Image -->
-          <div class="w-full lg:w-1/2">
-            <img
-              src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
-              alt="Delicious Food"
-              class="w-50rem h-auto rounded-full shadow-lg"
-            />
+      <section class="banner bg-base-100 pt-16 px-20">
+        <!-- swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- first slide -->
+            <div class="swiper-slide">
+              <div class="container mx-auto flex flex-col lg:flex-row items-center">
+                <!-- Left Image -->
+                <div class="w-full lg:w-1/2">
+                  <img
+                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+                    alt="Delicious Food"
+                    class="w-50rem h-auto rounded-full shadow-lg"
+                  />
+                </div>
+                <!-- Right Text -->
+                <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 text-center lg:text-left">
+                  <h1 class="text-4xl lg:text-[5rem] lg:leading-[70px] font-bold text-primary">Delicious Meals Delivered to Your Door</h1>
+                  <p class="mt-4 text-lg">
+                    Enjoy a wide variety of meals prepared with fresh ingredients, ready to satisfy your cravings.
+                  </p>
+                  <button class="mt-6 btn btn-primary">Order Now</button>
+                </div>
+              </div>
+            </div>
+           <!-- Second slide -->
+<div class="swiper-slide">
+  <div class="container mx-auto flex flex-col lg:flex-row items-center">
+    <!-- Left Image -->
+    <div class="w-full lg:w-1/2">
+      <img
+        src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+        alt="Delicious Food"
+        class="w-50rem h-auto rounded-full shadow-lg"
+      />
+    </div>
+    <!-- Right Text -->
+    <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 text-center lg:text-left">
+      <h1 class="text-4xl lg:text-[5rem] lg:leading-[70px] font-bold text-primary">Authentic African Flavors at Your Fingertips</h1>
+      <p class="mt-4 text-lg">
+        Indulge in the rich taste of traditional African dishes made with love and the freshest ingredients. Savor the essence of home in every bite.
+      </p>
+      <button class="mt-6 btn btn-primary">Order Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Third slide -->
+<div class="swiper-slide">
+  <div class="container mx-auto flex flex-col lg:flex-row items-center">
+    <!-- Left Image -->
+    <div class="w-full lg:w-1/2">
+      <img
+        src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+        alt="Delicious Food"
+        class="w-50rem h-auto rounded-full shadow-lg"
+      />
+    </div>
+    <!-- Right Text -->
+    <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 text-center lg:text-left">
+      <h1 class="text-4xl lg:text-[5rem] lg:leading-[70px] font-bold text-primary">A Culinary Journey Through Africa</h1>
+      <p class="mt-4 text-lg">
+        Experience a delightful fusion of African cuisines that bring together the finest flavors from across the continent, right to your door.
+      </p>
+      <button class="mt-6 btn btn-primary">Order Now</button>
+    </div>
+  </div>
+</div>
+
           </div>
-      
-          <!-- Right Text -->
-          <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 text-center lg:text-left">
-            <h1 class="text-4xl lg:text-5xl font-bold text-primary">Delicious Meals Delivered to Your Door</h1>
-            <p class="mt-4 text-lg text-secondary">
-              Enjoy a wide variety of meals prepared with fresh ingredients, ready to satisfy your cravings.
-            </p>
-            <button class="mt-6 btn btn-primary">Order Now</button>
-          </div>
-          
         </div>
       </section>
       
@@ -148,8 +198,8 @@
   
   
   <script src="./index.js"></script>
-  <!-- <script src="./swipper.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="./home-page.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- scroll reveal -->
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   <!-- <script src="scroll.js"></script> -->
