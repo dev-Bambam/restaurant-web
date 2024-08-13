@@ -30,5 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // place reservation
 const form = document.querySelector('#form')
 form.addEventListener('submit',()=>{
-    alert('Reservation placed')
+    const lName = document.querySelector('#l-name').value.trim()
+    const fName = document.querySelector('#name').value.trim()
+    const email = document.querySelector('#email').value.trim()
+    const tel = document.querySelector('#tel').value.trim()
+    const userDate = document.querySelector('#user-date').value.trim()
+    const userTime = document.querySelector('#user-time').value.trim()
+
+    if(lName && fName && email && tel && userDate && userTime){
+        alert('reservation placed: date:' )
+    }
 })
