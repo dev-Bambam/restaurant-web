@@ -8,7 +8,7 @@ document.querySelector('#form').addEventListener('submit', (e)=>{
     const password = document.querySelector('#password').value.trim()
     
     if(fName && lName && email && password){
-        window.location.href = 'index.html'
+        window.location.href = 'home.html'
     }
     else{
         alert ('input all field')
