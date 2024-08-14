@@ -51,7 +51,7 @@
 } */
     </style>
   </head>
-  <body>
+  <body class="relativ">
     <!-- header -->
     <header
       class="navbar bg-base-100 flex justify-between items-center shadow-sm fixed z-50"
@@ -99,8 +99,12 @@
               class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div class="card-body">
-                <span class="text-lg font-bold" id="no-of-item">0 Items</span>
-                <span class="text-info">Subtotal: $000.0</span>
+                <span class="text-lg font-bold"
+                  ><span id="no-of-item">0</span> Items</span
+                >
+                <span class="text-info"
+                  >Subtotal: $<span id="sub-total">0.00</span></span
+                >
                 <div class="card-actions">
                   <button class="btn btn-primary btn-block">View cart</button>
                 </div>
@@ -164,6 +168,28 @@
         </div>
       </div>
     </header>
+    <!-- modal -->
+    <div
+      id="modal"
+      class="absolut bottom-[440px] right-[100px] fixed z-50 hidden"
+    >
+      <div
+        tabindex="0"
+        class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+      >
+        <div class="card-body">
+          <span class="text-sm font-bold"
+            ><span id="m-items">0</span> Items added to cart</span
+          >
+          <span class="text-info"
+            >Subtotal: $<span id="m-subtotal">0.00</span></span
+          >
+          <div class="card-actions">
+            <button class="btn btn-primary btn-block">View cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- main -->
     <main>
       <!-- hero-section -->
@@ -296,7 +322,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>2500</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -315,7 +341,7 @@
                       Jollof and Fried Rice Combo
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -332,7 +358,7 @@
                   <div class="card-body mt-16">
                     <h2 class="card-title text-primary">Rice and Egg</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>1500</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -357,7 +383,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>2200</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -376,7 +402,7 @@
                       Jollof and Fried Rice Combo
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -393,7 +419,7 @@
                   <div class="card-body mt-16">
                     <h2 class="card-title text-primary">Rice and Egg</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="text-secondary">$200</p>
+                    <p class="text-secondary">₦<span>2100</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -404,22 +430,7 @@
             <!-- swallow-cat -->
             <div id="swallow-cat">
               <!-- first cards -->
-              <div id="s-first-cd">
-                <div
-                  tabindex="0"
-                  class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
-                >
-                  <div class="card-body">
-                    <span class="text-lg font-bold">0 Items</span>
-                    <span class="text-info">Subtotal: $000.0</span>
-                    <div class="card-actions">
-                      <button class="btn btn-primary btn-block">
-                        View cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div id="s-first-cd"></div>
               <!-- second card -->
               <div id="s-sec-cd"></div>
             </div>

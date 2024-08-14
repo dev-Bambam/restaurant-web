@@ -45,11 +45,30 @@ document.addEventListener("DOMContentLoaded", () => {
 const orderBtns = Array.from(document.getElementsByTagName("button"));
 const cartBadge = document.querySelector("#cart-badge");
 const items = document.querySelector("#no-of-item");
+const subTotal = document.querySelector("#sub-total");
+// modal
+const modal = document.querySelector("#modal");
+const modal_item = document.querySelector("#m-items");
+const modal_subtotal = document.querySelector("#m-subtotal");
 orderBtns.forEach((btn) => {
   if (btn.innerHTML === "Order Now") {
     btn.addEventListener("click", () => {
-      alert("check the cart");
-      cartBadge.innerHTML = parseInt(cartBadge.innerHTML);
+      const cardBody = btn.closest(".card-body");
+      const priceSpan = cardBody.querySelector("p span");
+      const price = priceSpan.innerText;
+      cartBadge.innerHTML = parseInt(cartBadge.innerHTML) + 1;
+      items.innerHTML = parseInt(items.innerHTML) + 1;
+      subTotal.innerHTML = parseInt(subTotal.innerHTML) + parseInt(price);
+      modal_item.innerHTML = items.innerHTML;
+      modal_subtotal.innerHTML = subTotal.innerHTML;
+
+      setInterval(() => {
+        modal.classList.remove("hidden");
+      }, 1000);
+
+      setTimeout(() => {
+        modal.classList.add("hidden");
+      }, 3000);
     });
   }
 });
