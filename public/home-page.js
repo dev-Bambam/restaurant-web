@@ -62,12 +62,12 @@ orderBtns.forEach((btn) => {
       modal_item.innerHTML = items.innerHTML;
       modal_subtotal.innerHTML = subTotal.innerHTML;
 
-      setInterval(() => {
-        modal.classList.remove("hidden");
+      const interval = setInterval(() => {
+        modal.classList.toggle("hidden");
       }, 1000);
 
       setTimeout(() => {
-        modal.classList.add("hidden");
+        clearInterval(interval);
       }, 3000);
     });
   }
