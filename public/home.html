@@ -63,7 +63,7 @@
       <div class="flex-grow mx-4">
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search food by category"
           class="input input-bordered w-full max-w-2xl"
         />
       </div>
@@ -89,7 +89,9 @@
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span class="badge badge-sm indicator-item">8</span>
+                <span class="badge badge-sm indicator-item" id="cart-badge"
+                  >0</span
+                >
               </div>
             </div>
             <div
@@ -97,8 +99,8 @@
               class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div class="card-body">
-                <span class="text-lg font-bold">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
+                <span class="text-lg font-bold" id="no-of-item">0 Items</span>
+                <span class="text-info">Subtotal: $000.0</span>
                 <div class="card-actions">
                   <button class="btn btn-primary btn-block">View cart</button>
                 </div>
@@ -402,7 +404,22 @@
             <!-- swallow-cat -->
             <div id="swallow-cat">
               <!-- first cards -->
-              <div id="s-first-cd"></div>
+              <div id="s-first-cd">
+                <div
+                  tabindex="0"
+                  class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+                >
+                  <div class="card-body">
+                    <span class="text-lg font-bold">0 Items</span>
+                    <span class="text-info">Subtotal: $000.0</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">
+                        View cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- second card -->
               <div id="s-sec-cd"></div>
             </div>
@@ -419,7 +436,6 @@
     </main>
   </body>
 
-  <script src="./index.js"></script>
   <script src="./home-page.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- scroll reveal -->
