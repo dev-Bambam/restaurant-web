@@ -106,4 +106,45 @@ document.addEventListener("DOMContentLoaded", () => {
     interval: 200, // This will create a staggered effect
     reset: true,
   });
+
+  // footer
+  ScrollReveal().reveal(".footer-section", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".footer-logo", {
+    origin: "left",
+    distance: "30px",
+    duration: 1000,
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".footer-links", {
+    origin: "top",
+    distance: "50px",
+    duration: 1000,
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".footer-social", {
+    origin: "right",
+    distance: "20px",
+    duration: 1000,
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".footer-copyright", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+    delay: 200,
+    reset: true,
+  });
 });
