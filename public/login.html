@@ -7,7 +7,6 @@
     <!-- test daisy ui cdn -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
 
-
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
@@ -109,11 +108,11 @@
     <div id="form-page" class="">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <div class="w-1/2 hidden lg:block">
-            <img
-              class="lg:w-full h-full rounded-l-lg object-fill"
-              src="./images/Rice/fried-jollof.jpg"
-              alt="Album"
-            />
+          <img
+            class="lg:w-full h-full rounded-l-lg object-fill"
+            src="./images/Rice/fried-jollof.jpg"
+            alt="Album"
+          />
         </div>
         <div class="card-body w-full lg:w-1/2 bg-base-200">
           <!-- form -->
@@ -131,7 +130,12 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
                   />
                 </svg>
-                <input type="text" placeholder="First Name" required id="fName"/>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  id="fName"
+                />
               </label>
               <!-- last name -->
               <label class="input input-bordered flex items-center gap-2">
@@ -145,7 +149,13 @@
                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
                   />
                 </svg>
-                <input type="text" class="grow" placeholder="Last name" required id="lName"/>
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Last name"
+                  required
+                  id="lName"
+                />
               </label>
               <!-- email -->
               <label class="input input-bordered flex items-center gap-2">
@@ -162,7 +172,13 @@
                     d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
                   />
                 </svg>
-                <input type="text" class="grow" placeholder="Email" required id="email"/>
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Email"
+                  required
+                  id="email"
+                />
               </label>
               <!-- password -->
               <label class="input input-bordered flex items-center gap-2">
@@ -178,12 +194,23 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <input type="password" class="grow" value="password" require id="password"/>
+                <input
+                  type="password"
+                  class="grow"
+                  value="password"
+                  require
+                  id="password"
+                />
               </label>
               <!-- button -->
-              <button class="btn btn-active btn-primary mt-16" type="submit">
-                Sign Up
-              </button>
+              <div class="flex justify-between -mt-4">
+                <button class="btn btn-active btn-primary mt-16" type="submit">
+                  Sign Up
+                </button>
+                <button class="btn btn-active btn-primary mt-16" id="go-back">
+                  Go Back
+                </button>
+              </div>
             </div>
           </form>
         </div>
