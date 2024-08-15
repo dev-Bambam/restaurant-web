@@ -50,9 +50,11 @@ const subTotal = document.querySelector("#sub-total");
 const modal = document.querySelector("#modal");
 const modal_item = document.querySelector("#m-items");
 const modal_subtotal = document.querySelector("#m-subtotal");
+let empty = true;
 orderBtns.forEach((btn) => {
   if (btn.innerHTML === "Order Now") {
     btn.addEventListener("click", () => {
+      empty = false;
       const cardBody = btn.closest(".card-body");
       const priceSpan = cardBody.querySelector("p span");
       const price = priceSpan.innerText;
@@ -61,14 +63,25 @@ orderBtns.forEach((btn) => {
       subTotal.innerHTML = parseInt(subTotal.innerHTML) + parseInt(price);
       modal_item.innerHTML = items.innerHTML;
       modal_subtotal.innerHTML = subTotal.innerHTML;
-
-      const interval = setInterval(() => {
-        modal.classList.toggle("hidden");
-      }, 1000);
-
+      modal.classList.remove("hidden");
       setTimeout(() => {
-        clearInterval(interval);
+        modal.classList.add("hidden");
       }, 3000);
     });
   }
+});
+// confirm order
+
+const confirm = document.querySelector("#confirm");
+confirm.addEventListener("click", () => {
+  const lightBox = document.querySelector("#lightbox");
+  if (!empty) {
+    lightBox.classList.remove("hidden");
+    lightBox.classList.remove("lg:hidden");
+  }
+
+  setTimeout(() => {
+    lightBox.classList.add("hidden");
+    lightBox.classList.add("lg:hidden");
+  }, 3000);
 });

@@ -103,10 +103,12 @@
                   ><span id="no-of-item">0</span> Items</span
                 >
                 <span class="text-info"
-                  >Subtotal: $<span id="sub-total">0.00</span></span
+                  >Subtotal: ₦<span id="sub-total">0.00</span></span
                 >
                 <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
+                  <button class="btn btn-primary btn-block" id="confirm">
+                    confirm order
+                  </button>
                 </div>
               </div>
             </div>
@@ -171,18 +173,18 @@
     <!-- modal -->
     <div
       id="modal"
-      class="absolut bottom-[440px] right-[100px] fixed z-50 hidden"
+      class="bottom-[425px] md:bottom-[440px] right-[100px] fixed z-50 hidden"
     >
       <div
         tabindex="0"
-        class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+        class="card card-compact dropdown-content bg-base-200 z-[1] mt-3 w-52 shadow"
       >
         <div class="card-body">
           <span class="text-sm font-bold"
             ><span id="m-items">0</span> Items added to cart</span
           >
           <span class="text-info"
-            >Subtotal: $<span id="m-subtotal">0.00</span></span
+            >Subtotal: ₦<span id="m-subtotal">0.00</span></span
           >
           <div class="card-actions">
             <button class="btn btn-primary btn-block">View cart</button>
@@ -235,7 +237,7 @@
                 <!-- Left Image -->
                 <div class="w-full lg:w-1/2">
                   <img
-                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+                    src="./images/gen-img/img3.jpg"
                     alt="Delicious Food"
                     class="w-50rem h-auto rounded-full shadow-lg"
                   />
@@ -266,7 +268,7 @@
                 <!-- Left Image -->
                 <div class="w-full lg:w-1/2">
                   <img
-                    src="./images/images/mainCourses/Pounded Yam and Efo riro.jpg"
+                    src="./images/gen-img/SuperGhetti1-scaled (1).jpeg"
                     alt="Delicious Food"
                     class="w-50rem h-auto rounded-full shadow-lg"
                   />
@@ -445,6 +447,24 @@
         </div>
       </div>
     </main>
+    <!-- Light box -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 hidde bg-black bg-opacity-75 z-50 lg:hidden flex items-center justify-center"
+    >
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card-body space-y-4">
+          <div class="">
+            <img src="./images/icon-order-confirmed.svg" alt="" />
+          </div>
+          <h2 class="card-title text-primary">Order Confirmed!</h2>
+          <p>Thank you! We hope you enjoy your meal</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Place New Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script src="./home-page.js"></script>
