@@ -45,10 +45,9 @@
         justify-content: center;
       }
 
-      /* .card img {
-  border-radius: 50%;
-  border: 2px solid #ddd;
-} */
+      .card {
+        border-radius: 3%;
+      }
     </style>
   </head>
   <body class="relativ">
@@ -268,9 +267,9 @@
                 <!-- Left Image -->
                 <div class="w-full lg:w-1/2">
                   <img
-                    src="./images/gen-img/SuperGhetti1-scaled (1).jpeg"
+                    src="./images/gen-img/rice-beef.jpg"
                     alt="Delicious Food"
-                    class="w-50rem h-auto rounded-full shadow-lg"
+                    class="w-50rem h-auto rounded-full shadow-lg border-red-200"
                   />
                 </div>
                 <!-- Right Text -->
@@ -295,15 +294,15 @@
         </div>
       </section>
       <!-- categories container-->
-      <div id="food-category" class="bg-base-200 px-20 pt-16">
+      <div id="food-category" class="bg-base-100 px-20 pt-16">
         <!-- cat-wrapper -->
         <div id="cat-wrapper" class="">
           <!-- typography -->
           <div id="text" class="text-center">
-            <h1 class="text-primary text-4xl mb-24">Our Menus</h1>
+            <h1 class="text-primary text-4xl mb-24 text">Our Menus</h1>
           </div>
           <!-- food and drink category -->
-          <div id="fd-c">
+          <div id="fd-c" class="space-y-24">
             <!-- rice-cat -->
             <div id="rice-cat" class="space-y-24">
               <!-- first cards -->
@@ -353,7 +352,7 @@
                 <div class="card bg-base-100 w-96 rounded-none relative">
                   <figure>
                     <img
-                      src="images/Rice/fried-jollof.jpg"
+                      src="images/gen-img/rice-egg.jpg"
                       class="object-fill w-40 rounded-full absolute border-base-300"
                     />
                   </figure>
@@ -376,6 +375,74 @@
                 <div class="card bg-base-100 w-96 rounded-none relative">
                   <figure class="flex-shrink-0">
                     <img
+                      src="images/gen-img/rice-beef.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      White Rice with Beef
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="text-secondary">₦<span>3200</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/gen-img/Fried_Rice_with_Turkey.jpeg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Fried Rice With Turkey
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/Rice/fried-jollof.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Rice with Grilled Chicken
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>2100</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- swallow-cat -->
+            <div id="swallow-cat" class="space-y-24">
+              <!-- first cards -->
+              <div
+                id="r-first-cd"
+                class="flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0"
+              >
+                <!-- first card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure class="flex-shrink-0">
+                    <img
                       src="images/Rice/jollof-chiken.jpg"
                       class="object-fill w-40 rounded-full absolute border-base-300"
                     />
@@ -385,7 +452,7 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <p class="text-secondary">₦<span>2200</span></p>
+                    <p class="text-secondary">₦<span>2500</span></p>
                     <div class="card-actions justify-end">
                       <button class="btn btn-secondary">Order Now</button>
                     </div>
@@ -414,12 +481,77 @@
                 <div class="card bg-base-100 w-96 rounded-none relative">
                   <figure>
                     <img
-                      src="images/Rice/fried-jollof.jpg"
+                      src="images/gen-img/rice-egg.jpg"
                       class="object-fill w-40 rounded-full absolute border-base-300"
                     />
                   </figure>
                   <div class="card-body mt-16">
                     <h2 class="card-title text-primary">Rice and Egg</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>1500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- second card -->
+              <div
+                id="r-sec-cd"
+                class="flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0"
+              >
+                <!-- first card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure class="flex-shrink-0">
+                    <img
+                      src="images/gen-img/rice-beef.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      White Rice with Beef
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="text-secondary">₦<span>3200</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/gen-img/Fried_Rice_with_Turkey.jpeg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Fried Rice With Turkey
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/Rice/fried-jollof.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Rice with Grilled Chicken
+                    </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <p class="text-secondary">₦<span>2100</span></p>
                     <div class="card-actions justify-end">
@@ -429,19 +561,134 @@
                 </div>
               </div>
             </div>
-            <!-- swallow-cat -->
-            <div id="swallow-cat">
-              <!-- first cards -->
-              <div id="s-first-cd"></div>
-              <!-- second card -->
-              <div id="s-sec-cd"></div>
-            </div>
             <!-- Drinks -->
-            <div id="drinks">
+            <div id="drinks" class="space-y-24">
               <!-- first cards -->
-              <div id="d-first-cd"></div>
+              <div
+                id="r-first-cd"
+                class="flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0"
+              >
+                <!-- first card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure class="flex-shrink-0">
+                    <img
+                      src="images/Rice/jollof-chiken.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">Jollof and Chicken</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="text-secondary">₦<span>2500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/Rice/fried-jollof.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Jollof and Fried Rice Combo
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/gen-img/rice-egg.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">Rice and Egg</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>1500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- second card -->
-              <div id="d-sec-cd"></div>
+              <div
+                id="r-sec-cd"
+                class="flex flex-col lg:flex-row lg:space-x-8 justify-center items-center space-y-24 lg:space-y-0"
+              >
+                <!-- first card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure class="flex-shrink-0">
+                    <img
+                      src="images/gen-img/rice-beef.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      White Rice with Beef
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="text-secondary">₦<span>3200</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/gen-img/Fried_Rice_with_Turkey.jpeg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Fried Rice With Turkey
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>4500</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 w-96 rounded-none relative">
+                  <figure>
+                    <img
+                      src="images/Rice/fried-jollof.jpg"
+                      class="object-fill w-40 rounded-full absolute border-base-300"
+                    />
+                  </figure>
+                  <div class="card-body mt-16">
+                    <h2 class="card-title text-primary">
+                      Rice with Grilled Chicken
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="text-secondary">₦<span>2100</span></p>
+                    <div class="card-actions justify-end">
+                      <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -450,7 +697,7 @@
     <!-- Light box -->
     <div
       id="lightbox"
-      class="fixed inset-0 hidde bg-black bg-opacity-75 z-50 lg:hidden flex items-center justify-center"
+      class="fixed inset-0 hidden bg-black bg-opacity-75 z-50 lg:hidden flex items-center justify-center"
     >
       <div class="card bg-base-100 w-96 shadow-xl">
         <div class="card-body space-y-4">
@@ -470,6 +717,6 @@
   <script src="./home-page.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- scroll reveal -->
-  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <!-- <script src="scroll.js"></script> -->
 </html>

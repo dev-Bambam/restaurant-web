@@ -2541,6 +2541,12 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.card {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .fixed {
   position: fixed;
 }
@@ -2557,8 +2563,8 @@ html {
   inset: 0px;
 }
 
-.bottom-\[435px\] {
-  bottom: 435px;
+.bottom-\[425px\] {
+  bottom: 425px;
 }
 
 .right-\[100px\] {
@@ -2567,30 +2573,6 @@ html {
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-\[430px\] {
-  bottom: 430px;
-}
-
-.bottom-\[450px\] {
-  bottom: 450px;
-}
-
-.bottom-\[459px\] {
-  bottom: 459px;
-}
-
-.bottom-\[4590px\] {
-  bottom: 4590px;
-}
-
-.bottom-\[45px\] {
-  bottom: 45px;
-}
-
-.bottom-\[425px\] {
-  bottom: 425px;
 }
 
 .z-50 {
@@ -2779,14 +2761,6 @@ html {
   width: 100%;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2867,16 +2841,16 @@ html {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.space-y-9 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-9 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
 .rounded-box {
@@ -2910,6 +2884,11 @@ html {
   border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
 }
 
+.border-red-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -2918,11 +2897,6 @@ html {
 .bg-base-200 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.bg-base-300 {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
 }
 
 .bg-black {

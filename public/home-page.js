@@ -85,3 +85,25 @@ confirm.addEventListener("click", () => {
     lightBox.classList.add("lg:hidden");
   }, 3000);
 });
+
+// scroll reveal
+document.addEventListener("DOMContentLoaded", () => {
+  ScrollReveal().reveal("#food-category .card", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+    delay: 300,
+    interval: 200, // This will create a staggered effect
+    reset: true,
+  });
+
+  // text
+  ScrollReveal().reveal("#food-category .text", {
+    origin: "top",
+    distance: "50px",
+    duration: 1000,
+    delay: 300,
+    interval: 200, // This will create a staggered effect
+    reset: true,
+  });
+});
