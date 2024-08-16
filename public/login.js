@@ -45,5 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // go back
 const goBackBtn = document.querySelector("#go-back");
 goBackBtn.addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "https://restaurant-web-ruddy.vercel.app/index.html";
 });
